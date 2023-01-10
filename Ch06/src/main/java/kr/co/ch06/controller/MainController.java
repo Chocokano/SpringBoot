@@ -16,7 +16,7 @@ public class MainController {
 	public String index(Model model) {
 		
 		String tit = "Spring Boot!";
-		String name = "Tymeleaf!";
+		String name = "Thymeleaf!";
 		
 		UserVO user1 = new UserVO();
 		user1.setUid("a101");
@@ -33,12 +33,12 @@ public class MainController {
 		users.add(new UserVO("a104", "강감찬", "010-1234-1004", 24));
 		users.add(new UserVO("a105", "이순신", "010-1234-1005", 25));
 		
+		
 		model.addAttribute("tit", tit);
 		model.addAttribute("name", name);
 		model.addAttribute("user1", user1);
 		model.addAttribute("user2", user2);
 		model.addAttribute("users", users);
-		
 		
 		return "/index";
 	}
