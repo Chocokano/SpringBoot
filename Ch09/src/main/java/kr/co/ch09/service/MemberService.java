@@ -1,5 +1,7 @@
 package kr.co.ch09.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,11 +14,21 @@ public class MemberService {
 	@Autowired
 	private MemberRepo repo;
 	
+	
 	public void insertMember(MemberVO vo) {
 		repo.save(vo);
 	}
-	public void selectMember() {}
-	public void selectMembers() {}
-	public void updateMember() {}
-	public void deleteMember() {}
+	public MemberVO selectMember(String uid) {
+		return repo.findById(uid).get();
+	}
+	public List<MemberVO> selectMembers() {
+		return repo.findAll();
+	}
+	public void updateMember(MemberVO vo) {
+		repo.save(vo);
+	}
+	public void deleteMember(String uid) {
+		repo.deleteById(uid);
+	}
+	
 }

@@ -24,7 +24,6 @@ public class User1Controller {
 	@GetMapping("/user1")
 	public List<User1VO> list() {		
 		List<User1VO> users = service.selectUser1s();
-		
 		/*
 		//builder 패턴 초기화
 		User1VO user1 = User1VO.builder()
@@ -33,7 +32,7 @@ public class User1Controller {
 						.hp("010-1234-1001")
 						.age(17)
 						.build();
-		*/		
+		*/
 		return users;
 	}
 	

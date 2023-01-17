@@ -4,11 +4,11 @@
 
  $(document).ready(function(){
 				
-	// user1 목록 요청
-	$('.user1_list1').click(function(){
+	// member 목록 요청
+	$('.member_list1').click(function(){
 		
 		$.ajax({
-			'url': '/Ch09/user1',
+			'url': '/Ch09/member',
 			'method': 'GET',
 			'dataType': 'json',
 			'success': function(data){
@@ -18,11 +18,11 @@
 		
 	});
 	
-	// user1 목록 요청
-	$('.user1_list2').click(function(){
+	// member 목록 요청
+	$('.member_list2').click(function(){
 		
 		$.ajax({
-			'url': '/Ch09/user1/r101',
+			'url': '/Ch09/member/r101',
 			'method': 'GET',
 			'dataType': 'json',
 			'success': function(data){
@@ -32,18 +32,19 @@
 		
 	});
 	
-	// user1 등록 요청
-	$('.user1_register').click(function(){
+	// member 등록 요청
+	$('.member_register').click(function(){
 		
 		let jsonData = {
 				"uid": "r101",	
 				"name": "홍길동",	
 				"hp": "010-1234-1111",	
-				"age": 21	
+				"pos": "사원",	
+				"dep": 110	
 			};
 		
 		$.ajax({
-			url: '/Ch09/user1',
+			url: '/Ch09/member',
 			method: 'POST',
 			data: jsonData,
 			dataType: 'json',
@@ -53,18 +54,19 @@
 		});
 	});
 	
-	// user1 수정 요청
-	$('.user1_modify').click(function(){
+	// member 수정 요청
+	$('.member_modify').click(function(){
 		
 		let jsonData = {
 				"uid": "r101",	
 				"name": "홍길동",	
 				"hp": "010-1234-2222",	
-				"age": 27	
+				"pos": "주임",	
+				"dep": 110
 			};
 		
 		$.ajax({
-			url: '/Ch09/user1',
+			url: '/Ch09/member',
 			method: 'PUT',
 			data: jsonData,
 			dataType: 'json',
@@ -74,11 +76,11 @@
 		});
 	});
 	
-	// user1 삭제 요청
-	$('.user1_delete').click(function(){
+	// member 삭제 요청
+	$('.member_delete').click(function(){
 		
 		$.ajax({
-			url: '/Ch09/user1/r101',
+			url: '/Ch09/member/r101',
 			method: 'DELETE',
 			dataType: 'json',
 			success: function(data){

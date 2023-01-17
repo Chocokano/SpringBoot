@@ -1,7 +1,12 @@
 package kr.co.ch09.vo;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,11 +23,14 @@ import lombok.Setter;
 @Table(name = "member")
 public class MemberVO {
 
+	@Id
 	private String uid;
 	private String pass;
 	private String name;
 	private String hp;
 	private String pos;
 	private int dep;
-	private String rdate;
+	
+	@CreationTimestamp
+	private LocalDateTime rdate;
 }
