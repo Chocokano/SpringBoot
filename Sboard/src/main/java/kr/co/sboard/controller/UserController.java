@@ -19,7 +19,6 @@ import kr.co.sboard.vo.TermsVO;
 import kr.co.sboard.vo.UserVO;
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @Controller
 public class UserController {
 
@@ -27,17 +26,17 @@ public class UserController {
 	private UserService service;
 	
 	
-	@GetMapping("/user/login")
+	@GetMapping("user/login")
 	public String login() {
-		return "/user/login";
+		return "user/login";
 	}
 	
-	@GetMapping("/user/register")
+	@GetMapping("user/register")
 	public String register() {
-		return "/user/register";
+		return "user/register";
 	}
 	
-	@PostMapping("/user/register")
+	@PostMapping("user/register")
 	public String register(UserVO vo, HttpServletRequest req) {
 		String regip = req.getRemoteAddr();
 		vo.setRegip(regip);
@@ -46,47 +45,23 @@ public class UserController {
 		return "redirect:/user/login?success="+result;
 	}
 	
-	@GetMapping("/user/terms")
+	@GetMapping("user/terms")
 	public String terms(Model model) {
 		TermsVO vo = service.selectTerms();
 		model.addAttribute(vo);
-		return "/user/terms";
+		return "user/terms";
 	}
 	
 	@ResponseBody
-	@GetMapping("/user/checkUid")
+	@GetMapping("user/checkUid")
 	public Map<String, Integer> checkUid(String uid) {
-		
-		log.info("here1 : " + uid);
-		
 		int result = service.countUser(uid);
-		
-		log.info("here2 : " + result);
-		
 		Map<String, Integer> map = new HashMap<>();
 		map.put("result", result);
-		
-		log.info("here3 : " + map);
 		
 		return map;
 	}
 	
-	@ResponseBody
-	@PostMapping("/user/checkUid2")
-	public Map<String, Integer> checkUid2(@RequestParam("uid") String uid) {
-		
-		log.info("here2-1 : " + uid);
-		
-		int result = service.countUser(uid);
-		
-		log.info("here2-2 : " + result);
-		
-		Map<String, Integer> map = new HashMap<>();
-		map.put("result", result);
-		
-		log.info("here2-3 : " + map);
-		
-		return map;
-	}
+	
 	
 }
