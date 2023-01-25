@@ -1,0 +1,61 @@
+2023-01-25 09:41:56.688  INFO 7624 --- [Test worker] k.c.f.F.FarmstoryApplicationTests        : Starting FarmstoryApplicationTests using Java 11.0.15.1 on DESKTOP-8N3GG4O with PID 7624 (started by java1 in C:\Users\java1\Desktop\workspace\SpringBoot\Farmstory)
+2023-01-25 09:41:56.691  INFO 7624 --- [Test worker] k.c.f.F.FarmstoryApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-01-25 09:41:57.203  INFO 7624 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-25 09:41:57.215  INFO 7624 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-01-25 09:41:57.327  WARN 7624 --- [Test worker] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.farmstory.Farmstory]' package. Please check your configuration.
+2023-01-25 09:41:57.714  INFO 7624 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-25 09:41:57.764  INFO 7624 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-25 09:41:57.922  INFO 7624 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-25 09:41:58.016  INFO 7624 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-25 09:41:58.329  INFO 7624 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-25 09:41:58.346  INFO 7624 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-25 09:41:58.649  INFO 7624 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-25 09:41:58.658  INFO 7624 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-25 09:41:58.850  WARN 7624 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-25 09:41:59.107  INFO 7624 --- [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-01-25 09:41:59.534  WARN 7624 --- [Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c4e8b329-0056-4367-b79b-0a67b9e8f5cc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-25 09:41:59.732  INFO 7624 --- [Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bac0be5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@368d51ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@7698a3d9, org.springframework.security.web.header.HeaderWriterFilter@29a50a11, org.springframework.security.web.csrf.CsrfFilter@782143e8, org.springframework.security.web.authentication.logout.LogoutFilter@40105b39, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@297454f7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1a5a4f8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2a349a73, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4866a755, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@662d3e85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5598dff2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ad6895a, org.springframework.security.web.session.SessionManagementFilter@328bc067, org.springframework.security.web.access.ExceptionTranslationFilter@138b9abe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e170abe]
+2023-01-25 09:41:59.811  INFO 7624 --- [Test worker] k.c.f.F.FarmstoryApplicationTests        : Started FarmstoryApplicationTests in 3.384 seconds (JVM running for 4.336)
+2023-01-25 09:42:00.026  INFO 7624 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-25 09:42:00.029  INFO 7624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-25 09:42:00.038  INFO 7624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-25 09:43:59.556  INFO 520 --- [restartedMain] k.c.f.Farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 11.0.15.1 on DESKTOP-8N3GG4O with PID 520 (C:\Users\java1\Desktop\workspace\SpringBoot\Farmstory\build\classes\java\main started by java1 in C:\Users\java1\Desktop\workspace\SpringBoot\Farmstory)
+2023-01-25 09:43:59.558  INFO 520 --- [restartedMain] k.c.f.Farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-25 09:43:59.611  INFO 520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-25 09:43:59.612  INFO 520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-25 09:44:00.118  INFO 520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-25 09:44:00.131  INFO 520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-01-25 09:44:00.256  WARN 520 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.farmstory.Farmstory]' package. Please check your configuration.
+2023-01-25 09:44:00.766  INFO 520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-01-25 09:44:00.777  INFO 520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-25 09:44:00.778  INFO 520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-01-25 09:44:00.846  INFO 520 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2023-01-25 09:44:00.847  INFO 520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1234 ms
+2023-01-25 09:44:01.034  INFO 520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-25 09:44:01.078  INFO 520 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-25 09:44:01.211  INFO 520 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-25 09:44:01.296  INFO 520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-25 09:44:01.574  INFO 520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-25 09:44:01.590  INFO 520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-25 09:44:01.788  INFO 520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-25 09:44:01.797  INFO 520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-25 09:44:01.847  WARN 520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-25 09:44:01.998  INFO 520 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-01-25 09:44:02.242  WARN 520 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a24bc183-0479-4fee-b881-29fdc2446e2f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-25 09:44:02.367  INFO 520 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ac0b179, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6502f7f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ccb8f03, org.springframework.security.web.header.HeaderWriterFilter@7cf3a242, org.springframework.security.web.csrf.CsrfFilter@7205f3ee, org.springframework.security.web.authentication.logout.LogoutFilter@22d02106, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7dd4a4fe, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2e28525, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d915f8c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12b9b49f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3630b6b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2accfb9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ea26ef1, org.springframework.security.web.session.SessionManagementFilter@bfdc951, org.springframework.security.web.access.ExceptionTranslationFilter@5e772f9d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17070d2e]
+2023-01-25 09:44:02.411  INFO 520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-25 09:44:02.437  INFO 520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/Farmstory'
+2023-01-25 09:44:02.445  INFO 520 --- [restartedMain] k.c.f.Farmstory.FarmstoryApplication     : Started FarmstoryApplication in 3.245 seconds (JVM running for 3.658)
+2023-01-25 09:44:06.769  INFO 520 --- [http-nio-8181-exec-2] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-25 09:44:06.770  INFO 520 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-25 09:44:06.771  INFO 520 --- [http-nio-8181-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
