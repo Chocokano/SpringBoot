@@ -1,0 +1,3 @@
+2023-04-24 13:43:47.159  INFO 10692 --- [main] kr.co.todo.TodoAppApplicationTests       : Starting TodoAppApplicationTests using Java 17.0.5 on DESKTOP-8N3GG4O with PID 10692 (started by java1 in C:\Users\java1\Desktop\workspace\SpringBoot\TodoApp)
+2023-04-24 13:43:47.161  INFO 10692 --- [main] kr.co.todo.TodoAppApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2023-04-24 13:43:48.618  INFO 10692 --- [main] kr.co.todo.TodoAppApplicationTests       : Started TodoAppApplicationTests in 1.69 seconds (JVM running for 2.443)
